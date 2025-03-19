@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    background: url(./IMG/header_background.jpeg) no-repeat center center/cover;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+/* Contenido */
+.content, .post-credit, .game, .cast {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #111;
+    border-radius: 10px;
+}
+
+h2, h3 {
+    color: #ff0000;
+}
+
+a {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Imágenes */
+img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #222;
+    border-radius: 10px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #444;
+    text-align: center;
+}
+
+th {
+    background: #ff0000;
+    color: #fff;
+}
+
+/* Estilos para el Carrusel */
+.custom-carousel {
+    max-width: 800px;
+    margin: 30px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.5);
+}
+
+.carousel-img {
+    height: 450px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item:hover .carousel-img {
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .carousel-img {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .carousel-img {
+        height: 250px;
+    }
+}
